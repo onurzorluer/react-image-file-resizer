@@ -1,5 +1,5 @@
 # React Image File Resizer
-
+[![Build Status](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)](https://travis-ci.com/transitive-bullshit/create-react-library)
 `react-image-file-resizer` is a React module that can create scaled versions of local images.
 
 ## Setup
