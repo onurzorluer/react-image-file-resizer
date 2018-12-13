@@ -8,7 +8,6 @@
 Install the package:
 ```
 npm install --save react-image-file-resizer
-react-native link react-image-file-resizer
 ```
 or
 ```
