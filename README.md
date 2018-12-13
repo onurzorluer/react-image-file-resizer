@@ -1,6 +1,6 @@
 # React Image File Resizer
 
-A React module that can create scaled versions of local images.
+`react-image-file-resizer` is a React module that can create scaled versions of local images.
 
 ## Setup
 
