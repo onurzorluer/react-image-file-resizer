@@ -51,7 +51,7 @@ class Resizer extends Component {
         return canvas.toDataURL(`image/${compressFormat}`, qualityDecimal);
     }
 
-    static createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUri) {
+    static createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc) {
         const reader = new FileReader();
         if(file) {
             reader.readAsDataURL(file);
@@ -60,18 +60,18 @@ class Resizer extends Component {
                 image.src = reader.result;
                 image.onload = function () {
                 var resizedDataUrl = Resizer.resizeAndRotateImage(image, maxWidth, maxHeight, compressFormat, quality, rotation);
-                responseUri(resizedDataUrl)
+                responseUriFunc(resizedDataUrl)
                 };        
             };
             reader.onerror = error => {
-            responseUri(error)
+            responseUriFunc(error)
             };
         } else {callBack('File Not Found')}
     }
 }
     
-    export default { imageFileResizer: (file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUri) => {
-    return Resizer.createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUri)
+    export default { imageFileResizer: (file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc) => {
+    return Resizer.createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc)
     } }
 
 
