@@ -77,8 +77,8 @@ export default App;
 Option | Description | Type | Required
 ------ | ----------- | ---- | -------- 
 file | Path of image file | file | yes
-maxWidth | Image max width (ratio is preserved) | integer | yes
-maxHeight | Image max height (ratio is preserved) | integer | yes
+maxWidth | New image max width (ratio is preserved) | integer | yes
+maxHeight | New image max height (ratio is preserved) | integer | yes
 compressFormat | Can be either JPEG, PNG or WEBP. | string | yes
 quality | A number between 0 and 100. Used for the JPEG compression.(if no compress is needed, just set it to 100) | integer | yes
 rotation | Rotation to apply to the image. Rotation is limited to multiples of 90 degrees.(if no rotation is needed, just set it to 0) (0, 90, 180, 270, 360) | integer | yes
