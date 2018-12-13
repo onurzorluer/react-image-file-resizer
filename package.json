@@ -14,9 +14,12 @@
   "keywords": [
     "react",
     "image",
+    "photo",
     "file",
     "resize",
-    "resizer"
+    "resizer",
+    "compress",
+    "rotate"
   ],
   "author": "Onur Zorluer",
   "license": "MIT",
