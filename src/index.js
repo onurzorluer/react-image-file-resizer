@@ -66,7 +66,7 @@ class Resizer extends Component {
             reader.onerror = error => {
             responseUriFunc(error)
             };
-        } else {callBack('File Not Found')}
+        } else {responseUriFunc('File Not Found')}
     }
 }
     
