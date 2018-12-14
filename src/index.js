@@ -4,7 +4,7 @@
 *
 */
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
 class Resizer extends Component {
 
     static changeHeightWidth(height, maxHeight, width, maxWidth) {
@@ -35,16 +35,16 @@ class Resizer extends Component {
         var ctx = canvas.getContext("2d");
 
         if(rotation) {
-        ctx.rotate(rotation * Math.PI / 180);
-        if (rotation === 90) {
-            ctx.translate(0, -canvas.width);
-        } else if (rotation === 180) {
-            ctx.translate(-canvas.width, -canvas.height);
-        } else if (rotation === 270) {
-            ctx.translate(-canvas.height, 0);
-        } else if (rotation === 0 || rotation === 360) {
-            ctx.translate(0, 0);
-        } else { return "Rotation Error"}
+            ctx.rotate(rotation * Math.PI / 180);
+            if (rotation === 90) {
+                ctx.translate(0, -canvas.width);
+            } else if (rotation === 180) {
+                ctx.translate(-canvas.width, -canvas.height);
+            } else if (rotation === 270) {
+                ctx.translate(-canvas.height, 0);
+            } else if (rotation === 0 || rotation === 360) {
+                ctx.translate(0, 0);
+            }
         } 
         ctx.drawImage(image, 0, 0, width, height); 
     
@@ -68,6 +68,15 @@ class Resizer extends Component {
             };
         } else {responseUriFunc('File Not Found')}
     }
+}
+Resizer.createResizedImage.propTypes = {
+    file: PropTypes.object.isRequired,
+    maxWidth: PropTypes.number.isRequired,
+    maxHeight: PropTypes.number.isRequired,
+    compressFormat: PropTypes.oneOf(['JPEG', 'jpeg', 'PNG', 'png', 'WEBP', 'webp']).isRequired,
+    quality: PropTypes.number.isRequired,
+    rotation: PropTypes.oneOf([0, 90, 180, 270, 360]).isRequired,
+    responseUriFunc: PropTypes.func.isRequired
 }
     
     export default { imageFileResizer: (file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc) => {
