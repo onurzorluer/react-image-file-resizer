@@ -1,7 +1,9 @@
 # React Image File Resizer
 [![Build Status](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)
 
-`react-image-file-resizer` is a React module that can create scaled versions of local images.
+`react-image-file-resizer` is a react module that can rescaled local images. 
+You can change image's width, height, format, rotation and quality.
+It returns of new image's base64 URI. The URI can be used as the source of an `<Image>` component.
 
 ## Setup
 
