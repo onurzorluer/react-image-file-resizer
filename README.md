@@ -1,9 +1,11 @@
 # React Image File Resizer
+
 [![Build Status](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)
 
-`react-image-file-resizer` is a react module that can rescaled local images. 
+`react-image-file-resizer` is a react module that can rescaled local images.
+
 - You can change image's width, height, format, rotation and quality.
-- It returns of new image's base64 URI. The URI can be used as the source of an `<Image>` component.
+- It returns of new image's base64 URI or Blob. The URI can be used as the source of an `<Image>` component.
 
 ## Setup
 
@@ -28,8 +30,9 @@ Resizer.imageFileResizer(
     compressFormat, // is the compressFormat of the  new image
     quality, // is the quality of the  new image
     rotation, // is the rotatoion of the  new image
-    responseUriFunc  // is the callBack function of the new image URI
-    );        
+    responseUriFunc,  // is the callBack function of the new image URI
+    outputType  // is the output type of the new image
+    );
 ```
 
 ## Example
@@ -59,7 +62,8 @@ class App extends Component {
                 0,
                 uri => {
                     console.log(uri)
-                }
+                },
+                'base64'
             );
         }
     }
@@ -75,8 +79,9 @@ class App extends Component {
 
 export default App;
 ```
+
 Option | Description | Type | Required
------- | ----------- | ---- | -------- 
+------ | ----------- | ---- | --------
 `file` | Path of image file | `object` | Yes
 `maxWidth` | New image max width (ratio is preserved) | `number` | Yes
 `maxHeight` | New image max height (ratio is preserved) | `number` | Yes
@@ -84,6 +89,7 @@ Option | Description | Type | Required
 `quality` | A number between 0 and 100. Used for the JPEG compression.(if no compress is needed, just set it to 100) | `number` | Yes
 `rotation` | Rotation to apply to the image. Rotation is limited to multiples of 90 degrees.(if no rotation is needed, just set it to 0) (0, 90, 180, 270, 360) | `number` | Yes
 `responseUriFunc` | Callback function of URI. Returns URI of resized image's base64 format. ex: `uri => {console.log(uri)});` | `function` | Yes
+`outputType` | Can be either base64 or blob.(Default type is base64) | `string` | No
 
 ## Contributing
 
@@ -92,6 +98,3 @@ Pull Requests for new features and bug fixes are welcome! :)
 ## License
 
 [MIT](https://opensource.org/licenses/mit-license.html)
-
-
-

@@ -3,9 +3,7 @@
 * @author Onur Zorluer.
 *
 */
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-class Resizer extends Component {
+class Resizer {
 
     static changeHeightWidth(height, maxHeight, width, maxWidth) {
         if (width > maxWidth) {
@@ -51,7 +49,32 @@ class Resizer extends Component {
         return canvas.toDataURL(`image/${compressFormat}`, qualityDecimal);
     }
 
-    static createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc) {
+    static b64toBlob(b64Data, contentType) {
+        contentType = contentType || 'image/jpeg';
+        var sliceSize = 512;
+    
+        var byteCharacters = atob(b64Data.toString().replace(/^data:image\/(png|jpeg|jpg);base64,/, ''));
+        var byteArrays = [];
+    
+        for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+            var slice = byteCharacters.slice(offset, offset + sliceSize);
+    
+            var byteNumbers = new Array(slice.length);
+            for (var i = 0; i < slice.length; i++) {
+                byteNumbers[i] = slice.charCodeAt(i);
+            }
+    
+            var byteArray = new Uint8Array(byteNumbers);
+    
+            byteArrays.push(byteArray);
+        }
+    
+        var blob = new Blob(byteArrays, {type: contentType});
+        return blob;
+    }
+
+    static createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc, outputType = 'base64') {
+        var blob = null
         const reader = new FileReader();
         if(file) {
             reader.readAsDataURL(file);
@@ -60,6 +83,10 @@ class Resizer extends Component {
                 image.src = reader.result;
                 image.onload = function () {
                 var resizedDataUrl = Resizer.resizeAndRotateImage(image, maxWidth, maxHeight, compressFormat, quality, rotation);
+                blob = Resizer.b64toBlob(resizedDataUrl, `image/${compressFormat}`);
+                outputType === 'blob' ?
+                responseUriFunc(blob)
+                :
                 responseUriFunc(resizedDataUrl)
                 };        
             };
@@ -68,19 +95,8 @@ class Resizer extends Component {
             };
         } else {responseUriFunc('File Not Found')}
     }
+}   
+export default { imageFileResizer: (file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc) => {
+        return Resizer.createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc)
+    } 
 }
-Resizer.createResizedImage.propTypes = {
-    file: PropTypes.object.isRequired,
-    maxWidth: PropTypes.number.isRequired,
-    maxHeight: PropTypes.number.isRequired,
-    compressFormat: PropTypes.oneOf(['JPEG', 'jpeg', 'PNG', 'png', 'WEBP', 'webp']).isRequired,
-    quality: PropTypes.number.isRequired,
-    rotation: PropTypes.oneOf([0, 90, 180, 270, 360]).isRequired,
-    responseUriFunc: PropTypes.func.isRequired
-}
-    
-    export default { imageFileResizer: (file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc) => {
-    return Resizer.createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc)
-    } }
-
-

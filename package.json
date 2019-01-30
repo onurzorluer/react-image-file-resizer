@@ -32,12 +32,6 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/onurzorluer/react-image-file-resizer#readme",
-  "peerDependencies": {
-    "react": "^16.4.0"
-  },
-  "dependencies": {
-    "react": "^16.4.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/polyfill": "^7.0.0",
@@ -49,7 +43,6 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
-    "prop-types":"^15.6.2"
+    "webpack-cli": "^3.1.2"
   }
 }
