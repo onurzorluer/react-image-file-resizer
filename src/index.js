@@ -96,7 +96,7 @@ class Resizer {
         } else {responseUriFunc('File Not Found')}
     }
 }   
-export default { imageFileResizer: (file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc) => {
-        return Resizer.createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc)
+export default { imageFileResizer: (file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc, outputType) => {
+        return Resizer.createResizedImage(file, maxWidth, maxHeight, compressFormat, quality, rotation, responseUriFunc, outputType)
     } 
 }
