@@ -92,10 +92,6 @@ Option | Description | Type | Required
 `responseUriFunc` | Callback function of URI. Returns URI of resized image's base64 format. ex: `uri => {console.log(uri)});` | `function` | Yes
 `outputType` | Can be either base64 or blob.(Default type is base64) | `string` | No
 
-## Contributing
-
-Pull Requests for new features and bug fixes are welcome! :)
-
 ## License
 
 [MIT](https://opensource.org/licenses/mit-license.html)
