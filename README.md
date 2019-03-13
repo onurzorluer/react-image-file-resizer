@@ -1,4 +1,5 @@
 # React Image File Resizer
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![Build Status](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)
 
@@ -98,3 +99,15 @@ Pull Requests for new features and bug fixes are welcome! :)
 ## License
 
 [MIT](https://opensource.org/licenses/mit-license.html)
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/all-contributors/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars2.githubusercontent.com/u/26637638?v=4" width="100px;" alt="Ahmad Maleki"/><br /><sub><b>Ahmad Maleki</b></sub>](http://www.ahmadmaleki.com)<br />[💻](https://github.com/onurzorluer/react-image-file-resizer/commits?author=AhmadMaleki "Code") [🚧](#maintenance-AhmadMaleki "Maintenance") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
