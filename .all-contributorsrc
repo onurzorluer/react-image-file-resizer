@@ -1,0 +1,24 @@
+{
+  "projectName": "react-image-file-resizer",
+  "projectOwner": "onurzorluer",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "AhmadMaleki",
+      "name": "Ahmad Maleki",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/26637638?v=4",
+      "profile": "http://www.ahmadmaleki.com",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
