@@ -24,11 +24,17 @@ class Resizer {
         var width = image.width;
         var height = image.height;
     
-        canvas.width = this.changeHeightWidth(height, maxHeight, width, maxWidth).width;
-        canvas.height = this.changeHeightWidth(height, maxHeight, width, maxWidth).height;
+        var newHeightWidth = this.changeHeightWidth(height, maxHeight, width, maxWidth);
+        if(rotation && (rotation === 90 || rotation === 270)) {
+            canvas.width = newHeightWidth.height;
+            canvas.height = newHeightWidth.width;
+        } else {
+            canvas.width = newHeightWidth.width;
+            canvas.height = newHeightWidth.height;
+        }
 
-        width = canvas.width;
-        height = canvas.height;
+        width = newHeightWidth.width;
+        height = newHeightWidth.height;
 
         var ctx = canvas.getContext("2d");
 
