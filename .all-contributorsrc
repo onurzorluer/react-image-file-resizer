@@ -18,6 +18,16 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "martinvysnovsky",
+      "name": "Martin Vyšňovský",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5657185?v=4",
+      "profile": "http://www.vysnovsky.sk",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7
