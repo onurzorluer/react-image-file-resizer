@@ -17,7 +17,7 @@ class Resizer {
         return {height, width}
     }
 
-    static resizeAndRotateImage(image, maxHeight, maxWidth, compressFormat = "jpeg" , quality = 100, rotation = 0) {
+    static resizeAndRotateImage(image, maxWidth, maxHeight, compressFormat = "jpeg" , quality = 100, rotation = 0) {
         var qualityDecimal = quality / 100;
         var canvas = document.createElement('canvas');
     
