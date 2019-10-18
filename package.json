@@ -1,6 +1,6 @@
 {
   "name": "react-image-file-resizer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React module that can rescaled local images",
   "main": "build/index.js",
   "scripts": {
@@ -28,21 +28,21 @@
   "author": {
     "name": "Onur Zorluer",
     "email": "zorlueronur@gmail.com",
-    "url": "http://onurzorluer.com"
+    "url": "https://onurzorluer.com"
   },
   "license": "MIT",
   "homepage": "https://github.com/onurzorluer/react-image-file-resizer#readme",
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.2.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.6.4",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^8.0.6",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   }
 }
