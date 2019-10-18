@@ -1,5 +1,5 @@
 # React Image File Resizer
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 [![Build Status](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)
 
@@ -102,7 +102,13 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="http://www.ahmadmaleki.com"><img src="https://avatars2.githubusercontent.com/u/26637638?v=4" width="100px;" alt="Ahmad Maleki"/><br /><sub><b>Ahmad Maleki</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=AhmadMaleki" title="Code">💻</a> <a href="#maintenance-AhmadMaleki" title="Maintenance">🚧</a></td><td align="center"><a href="http://www.vysnovsky.sk"><img src="https://avatars1.githubusercontent.com/u/5657185?v=4" width="100px;" alt="Martin Vyšňovský"/><br /><sub><b>Martin Vyšňovský</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=martinvysnovsky" title="Code">💻</a> <a href="#maintenance-martinvysnovsky" title="Maintenance">🚧</a></td></tr></table>
+<table>
+  <tr>
+    <td align="center"><a href="http://www.ahmadmaleki.com"><img src="https://avatars2.githubusercontent.com/u/26637638?v=4" width="100px;" alt="Ahmad Maleki"/><br /><sub><b>Ahmad Maleki</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=AhmadMaleki" title="Code">💻</a> <a href="#maintenance-AhmadMaleki" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://www.vysnovsky.sk"><img src="https://avatars1.githubusercontent.com/u/5657185?v=4" width="100px;" alt="Martin Vyšňovský"/><br /><sub><b>Martin Vyšňovský</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=martinvysnovsky" title="Code">💻</a> <a href="#maintenance-martinvysnovsky" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://nadunc.com"><img src="https://avatars2.githubusercontent.com/u/22863180?v=4" width="100px;" alt="Nadun Chamikara"/><br /><sub><b>Nadun Chamikara</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=nadunc" title="Code">💻</a> <a href="#maintenance-nadunc" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
