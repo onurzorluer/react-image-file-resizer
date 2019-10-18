@@ -28,6 +28,16 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "nadunc",
+      "name": "Nadun Chamikara",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22863180?v=4",
+      "profile": "http://nadunc.com",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7
