@@ -1,6 +1,6 @@
 /** 
 *
-* @author Onur Zorluer.
+* @author Onur Zorluer
 *
 */
 class Resizer {

@@ -1,6 +1,6 @@
 {
   "name": "react-image-file-resizer",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "React module that can rescaled local images",
   "main": "build/index.js",
   "scripts": {
