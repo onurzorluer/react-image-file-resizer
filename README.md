@@ -29,8 +29,8 @@ Resizer.imageFileResizer(
     maxWidth, // is the maxWidth of the  new image
     maxHeight, // is the maxHeight of the  new image
     compressFormat, // is the compressFormat of the  new image
-    quality, // is the quality of the  new image
-    rotation, // is the rotatoion of the  new image
+    quality, // is the quality of the new image
+    rotation, // is the degree of clockwise rotation to apply to the image. 
     responseUriFunc,  // is the callBack function of the new image URI
     outputType  // is the output type of the new image
     );
