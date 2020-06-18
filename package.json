@@ -42,6 +42,7 @@
     "@babel/polyfill": "^7.6.0",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "all-contributors-cli": "^6.16.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
