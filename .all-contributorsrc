@@ -1,64 +1,25 @@
 {
   "projectName": "react-image-file-resizer",
-  "projectOwner": "onurzorluer",
+  "projectOwner": "Onur Zorluer",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
   "imageSize": 100,
-  "commit": false,
+  "commit": true,
+  "commitConvention": "eslint",
   "contributors": [
     {
       "login": "AhmadMaleki",
       "name": "Ahmad Maleki",
       "avatar_url": "https://avatars2.githubusercontent.com/u/26637638?v=4",
-      "profile": "http://www.ahmadmaleki.com",
-      "contributions": [
-        "code",
-        "maintenance"
-      ]
-    },
-    {
-      "login": "martinvysnovsky",
-      "name": "Martin Vyšňovský",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/5657185?v=4",
-      "profile": "http://www.vysnovsky.sk",
-      "contributions": [
-        "code",
-        "maintenance"
-      ]
-    },
-    {
-      "login": "nadunc",
-      "name": "Nadun Chamikara",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/22863180?v=4",
-      "profile": "http://nadunc.com",
-      "contributions": [
-        "code",
-        "maintenance"
-      ]
-    },
-    {
-      "login": "shubhamzanwar",
-      "name": "Shubham Zanwar",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/15626155?v=4",
-      "profile": "https://github.com/shubhamzanwar",
-      "contributions": [
-        "doc"
-      ]
-    },
-        {
-      "login": "onderonur",
-      "name": "Onur Önder",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/50423574?v=4",
-      "profile": "https://github.com/onderonur",
+      "profile": "https://github.com/AhmadMaleki",
       "contributions": [
         "code",
         "maintenance"
       ]
     }
   ],
-  "contributorsPerLine": 7,
-  "skipCi": true
+  "contributorsPerLine": 7
 }
