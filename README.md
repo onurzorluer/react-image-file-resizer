@@ -14,7 +14,7 @@
 
 Install the package:
 ```
-npm install --save react-image-file-resizer
+npm i react-image-file-resizer
 ```
 or
 ```
