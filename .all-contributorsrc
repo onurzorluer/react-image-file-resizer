@@ -39,6 +39,15 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "shubhamzanwar",
+      "name": "Shubham Zanwar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/15626155?v=4",
+      "profile": "https://shubhamzanwar.github.io/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
