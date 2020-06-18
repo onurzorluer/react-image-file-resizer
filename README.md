@@ -1,6 +1,6 @@
 # React Image File Resizer
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 
@@ -109,6 +109,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
   <tr>
     <td align="center"><a href="https://github.com/AhmadMaleki"><img src="https://avatars2.githubusercontent.com/u/26637638?v=4" width="100px;" alt=""/><br /><sub><b>Ahmad Maleki</b></sub></a><br /><a href="https://github.com/Onur Zorluer/react-image-file-resizer/commits?author=AhmadMaleki" title="Code">💻</a> <a href="#maintenance-AhmadMaleki" title="Maintenance">🚧</a></td>
     <td align="center"><a href="http://www.vysnovsky.sk/"><img src="https://avatars1.githubusercontent.com/u/5657185?v=4" width="100px;" alt=""/><br /><sub><b>Martin Vyšňovský</b></sub></a><br /><a href="https://github.com/Onur Zorluer/react-image-file-resizer/commits?author=martinvysnovsky" title="Code">💻</a> <a href="#maintenance-martinvysnovsky" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/nadunc"><img src="https://avatars2.githubusercontent.com/u/22863180?v=4" width="100px;" alt=""/><br /><sub><b>Nadun Chamikara</b></sub></a><br /><a href="https://github.com/Onur Zorluer/react-image-file-resizer/commits?author=nadunc" title="Code">💻</a> <a href="#maintenance-nadunc" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
