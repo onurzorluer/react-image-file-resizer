@@ -3,3 +3,7 @@
 
 # production
 /build
+
+# npm packs
+react-image-file-resizer-0.3.0-beta.1.tgz
+react-image-file-resizer-0.3.0.tgz
