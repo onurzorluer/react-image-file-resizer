@@ -20,11 +20,11 @@ class Resizer {
       width = Math.round((width * maxHeight) / height);
       height = maxHeight;
     }
-    if (width < minWidth) {
+    if (minWidth && width < minWidth) {
       height = Math.round((hight * minWidth) / width);
       width = minWidth;
     }
-    if (height < minHeight) {
+    if (minHeight && height < minHeight) {
       width = Math.round((width * minHeight) / height);
       height = minHeight;
     }
@@ -115,13 +115,13 @@ class Resizer {
     file,
     maxWidth,
     maxHeight,
-    minWidth,
-    minHeight,
     compressFormat,
     quality,
     rotation,
     responseUriFunc,
-    outputType = "base64"
+    outputType = "base64",
+    minWidth = null,
+    minHeight = null,
   ) {
     var blob = null;
     const reader = new FileReader();
@@ -160,25 +160,25 @@ export default {
     file,
     maxWidth,
     maxHeight,
-    minWidth,
-    minHeight,
     compressFormat,
     quality,
     rotation,
     responseUriFunc,
-    outputType
+    outputType,
+    minWidth,
+    minHeight,
   ) => {
     return Resizer.createResizedImage(
       file,
       maxWidth,
       maxHeight,
-      minWidth,
-      minHeight,
       compressFormat,
       quality,
       rotation,
       responseUriFunc,
-      outputType
+      outputType,
+      minWidth,
+      minHeight,
     );
   },
 };
