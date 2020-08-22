@@ -38,7 +38,7 @@
   "license": "MIT",
   "homepage": "https://github.com/onurzorluer/react-image-file-resizer#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
