@@ -34,7 +34,9 @@ Resizer.imageFileResizer(
     quality, // is the quality of the new image
     rotation, // is the degree of clockwise rotation to apply to the image. 
     responseUriFunc,  // is the callBack function of the new image URI
-    outputType  // is the output type of the new image
+    outputType,  // is the output type of the new image
+    minWidth, // is the minWidth of the  new image
+    minHeight, // is the minHeight of the  new image
     );
 ```
 
@@ -66,7 +68,9 @@ class App extends Component {
                 uri => {
                     console.log(uri)
                 },
-                'base64'
+                'base64',
+                200,
+                200,
             );
         }
     }
@@ -93,6 +97,8 @@ Option | Description | Type | Required
 `rotation` | Degree of clockwise rotation to apply to the image. Rotation is limited to multiples of 90 degrees.(if no rotation is needed, just set it to 0) (0, 90, 180, 270, 360) | `number` | Yes
 `responseUriFunc` | Callback function of URI. Returns URI of resized image's base64 format. ex: `uri => {console.log(uri)});` | `function` | Yes
 `outputType` | Can be either base64 or blob.(Default type is base64) | `string` | No
+`minWidth` | New image min width (ratio is preserved, defaults to null) | `number` | No
+`minHeight` | New image min height (ratio is preserved, defaults to null) | `number` | No
 
 ## License
 
