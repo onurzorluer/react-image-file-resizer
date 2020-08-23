@@ -21,7 +21,7 @@ class Resizer {
       height = maxHeight;
     }
     if (minWidth && width < minWidth) {
-      height = Math.round((hight * minWidth) / width);
+      height = Math.round((height * minWidth) / width);
       width = minWidth;
     }
     if (minHeight && height < minHeight) {
