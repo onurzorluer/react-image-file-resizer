@@ -4,13 +4,17 @@ declare module "react-image-file-resizer" {
       height: number,
       maxHeight: number,
       width: number,
-      maxWidth: number
+      maxWidth: number,
+      minWidth: number,
+      minHeight: number
     ): { height: number; width: number };
 
     static resizeAndRotateImage(
       image: HTMLImageElement,
       maxWidth: number,
       maxHeight: number,
+      minWidth: number,
+      minHeight: number,
       compressFormat?: string,
       quality?: number,
       rotation?: number
@@ -28,7 +32,9 @@ declare module "react-image-file-resizer" {
       responseUriFunc: (
         value: string | Blob | ProgressEvent<FileReader>
       ) => void,
-      outputType: string
+      outputType?: string,
+      minWidth?: number,
+      minHeight?: number
     ): void;
   }
 
