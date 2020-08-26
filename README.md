@@ -8,7 +8,7 @@
 `react-image-file-resizer` is a react module that can rescaled local images.
 
 - You can change image's width, height, format, rotation and quality.
-- It returns of new image's base64 URI or Blob. The URI can be used as the source of an `<Image>` component.
+- It returns resized image's new base64 URI or Blob. The URI can be used as the source of an `<Image>` component.
 
 ## Setup
 
@@ -40,7 +40,29 @@ Resizer.imageFileResizer(
     );
 ```
 
-## Example
+## Example 1
+First, wrap this resizer:
+```javascript
+const resizeFile = (file) => new Promse(resolve => {
+    Resizer.imageFileResizer(file, 300, 300, 'JPEG', 100, 0,
+    uri => {
+      resolve(uri);
+    },
+    'base64'
+    );
+});
+```
+
+And then use it in your async function:
+```javascript
+const onChange = async (event) => {
+  const file = event.target.files[0];
+  const image = await resizeFile(file);
+  console.log(image);
+}
+```
+
+## Example 2
 
 ```javascript
 import React, { Component } from 'react';
@@ -68,7 +90,7 @@ class App extends Component {
                 uri => {
                     console.log(uri)
                 },
-                'base64',
+                'blob',
                 200,
                 200,
             );
