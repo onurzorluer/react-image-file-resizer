@@ -27,23 +27,23 @@ yarn add react-image-file-resizer
 import Resizer from 'react-image-file-resizer';
 
 Resizer.imageFileResizer(
-    file, //is the file of the new image that can now be uploaded...
-    maxWidth, // is the maxWidth of the  new image
-    maxHeight, // is the maxHeight of the  new image
-    compressFormat, // is the compressFormat of the  new image
-    quality, // is the quality of the new image
-    rotation, // is the degree of clockwise rotation to apply to the image. 
-    responseUriFunc,  // is the callBack function of the new image URI
-    outputType,  // is the output type of the new image
-    minWidth, // is the minWidth of the  new image
-    minHeight, // is the minHeight of the  new image
+    file, // Is the file of the image which will resized.
+    maxWidth, // Is the maxWidth of the resized new image.
+    maxHeight, // Is the maxHeight of the resized new image.
+    compressFormat, // Is the compressFormat of the resized new image.
+    quality, // Is the quality of the resized new image.
+    rotation, // Is the degree of clockwise rotation to apply to uploaded image. 
+    responseUriFunc,  // Is the callBack function of the resized new image URI.
+    outputType,  // Is the output type of the resized new image.
+    minWidth, // Is the minWidth of the resized new image.
+    minHeight, // Is the minHeight of the resized new image.
     );
 ```
 
 ## Example 1
 First, wrap this resizer:
 ```javascript
-const resizeFile = (file) => new Promse(resolve => {
+const resizeFile = (file) => new Promise(resolve => {
     Resizer.imageFileResizer(file, 300, 300, 'JPEG', 100, 0,
     uri => {
       resolve(uri);
