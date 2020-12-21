@@ -149,8 +149,3 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-## Support
-
-Any support is deeply appreciated. Buy me a coffee! 
-
-You can send BTC to the following address: `1J64fmsnLjMoFYmfGC9yVTfjvqpnBx7qhC`
