@@ -10,7 +10,6 @@
   ],
   "scripts": {
     "start": "webpack --watch",
-    "test": "npm test",
     "build": "webpack"
   },
   "repository": {
