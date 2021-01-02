@@ -90,7 +90,7 @@ class Resizer {
     var sliceSize = 512;
 
     var byteCharacters = atob(
-      b64Data.toString().replace(/^data:image\/(png|jpeg|jpg);base64,/, "")
+      b64Data.toString().replace(/^data:image\/(png|jpeg|jpg|webp);base64,/, "")
     );
     var byteArrays = [];
 
