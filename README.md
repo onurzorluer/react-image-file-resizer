@@ -77,6 +77,9 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.fileChangedHandler = this.fileChangedHandler.bind(this);
+        this.state = {
+          newImage: ''
+        }
     }
 
     fileChangedHandler(event) {
@@ -95,7 +98,7 @@ class App extends Component {
                 0,
                 uri => {
                     console.log(uri)
-                    this.setState({ imagefinal: uri })
+                    this.setState({ newImage: uri })
                 },
                 'base64',
                 200,
@@ -111,6 +114,7 @@ class App extends Component {
         return (
             <div className="App">
                 <input type="file" onChange={this.fileChangedHandler}/>
+                <img src={this.state.newImage} alt=''/>
             </div>
         );
     }
