@@ -126,32 +126,36 @@ class Resizer {
     var blob = null;
     const reader = new FileReader();
     if (file) {
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        var image = new Image();
-        image.src = reader.result;
-        image.onload = function () {
-          var resizedDataUrl = Resizer.resizeAndRotateImage(
-            image,
-            maxWidth,
-            maxHeight,
-            minWidth,
-            minHeight,
-            compressFormat,
-            quality,
-            rotation
-          );
-          blob = Resizer.b64toBlob(resizedDataUrl, `image/${compressFormat}`);
-          outputType === "blob"
-            ? responseUriFunc(blob)
-            : responseUriFunc(resizedDataUrl);
+      if(file.type && !file.type.includes("image")) {
+        throw Error("File Is NOT Image!");
+      } else {
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+          var image = new Image();
+          image.src = reader.result;
+          image.onload = function () {
+            var resizedDataUrl = Resizer.resizeAndRotateImage(
+              image,
+              maxWidth,
+              maxHeight,
+              minWidth,
+              minHeight,
+              compressFormat,
+              quality,
+              rotation
+            );
+            blob = Resizer.b64toBlob(resizedDataUrl, `image/${compressFormat}`);
+            outputType === "blob"
+              ? responseUriFunc(blob)
+              : responseUriFunc(resizedDataUrl);
+          };
         };
-      };
-      reader.onerror = (error) => {
-        responseUriFunc(error);
-      };
+        reader.onerror = (error) => {
+          throw Error(error);
+        };
+      } 
     } else {
-      responseUriFunc("File Not Found");
+      throw Error("File Not Found!");
     }
   }
 }

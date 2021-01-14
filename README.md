@@ -56,9 +56,14 @@ const resizeFile = (file) => new Promise(resolve => {
 And then use it in your async function:
 ```javascript
 const onChange = async (event) => {
-  const file = event.target.files[0];
-  const image = await resizeFile(file);
-  console.log(image);
+    try {
+        const file = event.target.files[0];
+        const image = await resizeFile(file);
+        console.log(image);
+    } catch(err) {
+        console.log(err);
+    }
+
 }
 ```
 
@@ -80,7 +85,8 @@ class App extends Component {
             fileInput = true
         }
         if(fileInput) {
-            Resizer.imageFileResizer(
+            try {
+                Resizer.imageFileResizer(
                 event.target.files[0],
                 300,
                 300,
@@ -89,11 +95,15 @@ class App extends Component {
                 0,
                 uri => {
                     console.log(uri)
+                    this.setState({ imagefinal: uri })
                 },
-                'blob',
+                'base64',
                 200,
                 200,
-            );
+                );
+            }   catch(err) {
+                    console.log(err)
+            }
         }
     }
 
