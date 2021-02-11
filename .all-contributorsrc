@@ -1,6 +1,6 @@
 {
   "projectName": "react-image-file-resizer",
-  "projectOwner": "Onur Zorluer",
+  "projectOwner": "onurzorluer",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -68,7 +68,18 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "OverStruck",
+      "name": "Juan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4591845?v=4",
+      "profile": "https://www.linkedin.com/in/velascojuan/",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
