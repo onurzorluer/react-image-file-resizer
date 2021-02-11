@@ -21,6 +21,7 @@ declare module "react-image-file-resizer" {
     ): string;
 
     static b64toBlob(b64Data: string, contentType: string): Blob;
+    static b64toFile(b64Data: string, fileName: string, contentType: string): File;
 
     static createResizedImage(
       file: Blob,
@@ -30,7 +31,7 @@ declare module "react-image-file-resizer" {
       quality: number,
       rotation: number,
       responseUriFunc: (
-        value: string | Blob | ProgressEvent<FileReader>
+        value: string | Blob | File | ProgressEvent<FileReader>
       ) => void,
       outputType?: string,
       minWidth?: number,

@@ -85,7 +85,7 @@ class Resizer {
     return canvas.toDataURL(`image/${compressFormat}`, qualityDecimal);
   }
 
-  static b64toBlob(b64Data, contentType) {
+  static b64toByteArrays(b64Data, contentType) {
     contentType = contentType || "image/jpeg";
     var sliceSize = 512;
 
@@ -106,9 +106,19 @@ class Resizer {
 
       byteArrays.push(byteArray);
     }
+    return byteArrays;
+  }
 
+  static b64toBlob(b64Data, contentType) {
+    const byteArrays = this.b64toByteArrays(b64Data, contentType);
     var blob = new Blob(byteArrays, { type: contentType });
     return blob;
+  }
+
+  static b64toFile(b64Data, fileName, contentType) {
+    const byteArrays = this.b64toByteArrays(b64Data, contentType);
+    const file = new File(byteArrays, fileName, { type: contentType });
+    return file;
   }
 
   static createResizedImage(
@@ -123,10 +133,9 @@ class Resizer {
     minWidth = null,
     minHeight = null,
   ) {
-    var blob = null;
     const reader = new FileReader();
     if (file) {
-      if(file.type && !file.type.includes("image")) {
+      if (file.type && !file.type.includes("image")) {
         throw Error("File Is NOT Image!");
       } else {
         reader.readAsDataURL(file);
@@ -144,16 +153,28 @@ class Resizer {
               quality,
               rotation
             );
-            blob = Resizer.b64toBlob(resizedDataUrl, `image/${compressFormat}`);
-            outputType === "blob"
-              ? responseUriFunc(blob)
-              : responseUriFunc(resizedDataUrl);
+            const contentType = `image/${compressFormat}`;
+            switch (outputType) {
+              case "blob":
+                const blob = Resizer.b64toBlob(resizedDataUrl, contentType);
+                responseUriFunc(blob)
+              break;
+              case "base64":
+                responseUriFunc(resizedDataUrl);
+              break;
+              case "file":
+                const file = Resizer.b64toFile(resizedDataUrl, file.name, contentType);
+                responseUriFunc(file)
+              break;
+              default:
+                throw Error("Unknown outputType");
+            }
           };
         };
         reader.onerror = (error) => {
           throw Error(error);
         };
-      } 
+      }
     } else {
       throw Error("File Not Found!");
     }
