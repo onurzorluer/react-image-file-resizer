@@ -167,7 +167,7 @@ class Resizer {
                 responseUriFunc(file)
               break;
               default:
-                throw Error("Unknown outputType");
+                responseUriFunc(resizedDataUrl);
             }
           };
         };
