@@ -128,11 +128,11 @@ Option | Description | Type | Required
 `file` | Path of image file | `object` | Yes
 `maxWidth` | New image max width (ratio is preserved) | `number` | Yes
 `maxHeight` | New image max height (ratio is preserved) | `number` | Yes
-`compressFormat` | Can be either JPEG, PNG or WEBP. | `string` | Yes
+`compressFormat` | Can be either **JPEG**, **PNG** or **WEBP**. | `string` | Yes
 `quality` | A number between 0 and 100. Used for the JPEG compression.(if no compress is needed, just set it to 100) | `number` | Yes
 `rotation` | Degree of clockwise rotation to apply to the image. Rotation is limited to multiples of 90 degrees.(if no rotation is needed, just set it to 0) (0, 90, 180, 270, 360) | `number` | Yes
 `responseUriFunc` | Callback function of URI. Returns URI of resized image's base64 format. ex: `uri => {console.log(uri)});` | `function` | Yes
-`outputType` | Can be either base64, blob or file.(Default type is base64) | `string` | No
+`outputType` | Can be either **base64**, **blob** or **file**.(Default type is base64) | `string` | No
 `minWidth` | New image min width (ratio is preserved, defaults to null) | `number` | No
 `minHeight` | New image min height (ratio is preserved, defaults to null) | `number` | No
 
