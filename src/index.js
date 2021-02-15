@@ -157,14 +157,14 @@ class Resizer {
             switch (outputType) {
               case "blob":
                 const blob = Resizer.b64toBlob(resizedDataUrl, contentType);
-                responseUriFunc(blob)
+                responseUriFunc(blob);
               break;
               case "base64":
                 responseUriFunc(resizedDataUrl);
               break;
               case "file":
-                const file = Resizer.b64toFile(resizedDataUrl, file.name, contentType);
-                responseUriFunc(file)
+                const newFile = Resizer.b64toFile(resizedDataUrl, file.name, contentType);
+                responseUriFunc(newFile);
               break;
               default:
                 responseUriFunc(resizedDataUrl);
