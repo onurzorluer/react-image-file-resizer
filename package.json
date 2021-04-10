@@ -34,7 +34,7 @@
   "author": {
     "name": "Onur Zorluer",
     "email": "zorlueronur@gmail.com",
-    "url": "https://onurzorluer.com"
+    "url": "https://zorluer.com"
   },
   "license": "MIT",
   "homepage": "https://github.com/onurzorluer/react-image-file-resizer#readme",
@@ -47,14 +47,14 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "all-contributors-cli": "^6.19.0",
-    "babel-cli": "^6.26.0",
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "jest": "^26.6.3",
-    "webpack": "^5.11.1",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
   }
 }

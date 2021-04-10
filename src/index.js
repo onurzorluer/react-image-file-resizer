@@ -111,13 +111,13 @@ class Resizer {
 
   static b64toBlob(b64Data, contentType) {
     const byteArrays = this.b64toByteArrays(b64Data, contentType);
-    var blob = new Blob(byteArrays, { type: contentType });
+    var blob = new Blob(byteArrays, { type: contentType, lastModified: new Date() });
     return blob;
   }
 
   static b64toFile(b64Data, fileName, contentType) {
     const byteArrays = this.b64toByteArrays(b64Data, contentType);
-    const file = new File(byteArrays, fileName, { type: contentType });
+    const file = new File(byteArrays, fileName, { type: contentType, lastModified: new Date() });
     return file;
   }
 
@@ -163,7 +163,10 @@ class Resizer {
                 responseUriFunc(resizedDataUrl);
               break;
               case "file":
-                const newFile = Resizer.b64toFile(resizedDataUrl, file.name, contentType);
+                let fileName = file.name;
+                let fileNameWithoutFormat = fileName.toString().replace(/(png|jpeg|jpg|webp)/, "");
+                let newFileName = fileNameWithoutFormat.concat(compressFormat.toString());
+                const newFile = Resizer.b64toFile(resizedDataUrl, newFileName, contentType);
                 responseUriFunc(newFile);
               break;
               default:
