@@ -164,7 +164,7 @@ class Resizer {
               break;
               case "file":
                 let fileName = file.name;
-                let fileNameWithoutFormat = fileName.toString().replace(/(png|jpeg|jpg|webp)/, "");
+                let fileNameWithoutFormat = fileName.toString().replace(/(png|jpeg|jpg|webp)$/i, "");
                 let newFileName = fileNameWithoutFormat.concat(compressFormat.toString());
                 const newFile = Resizer.b64toFile(resizedDataUrl, newFileName, contentType);
                 responseUriFunc(newFile);
