@@ -1,9 +1,7 @@
 # React Image File Resizer
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Build Status](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master) [![npm version](https://badge.fury.io/js/react-image-file-resizer.svg)](https://badge.fury.io/js/react-image-file-resizer)
@@ -173,6 +171,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
     <td align="center"><a href="https://www.linkedin.com/in/onderonur/"><img src="https://avatars0.githubusercontent.com/u/50423574?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Onur Önder</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=onderonur" title="Code">💻</a> <a href="#maintenance-onderonur" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://emreaybey.com/"><img src="https://avatars1.githubusercontent.com/u/45988990?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yunus Emre</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=YemreAybey" title="Code">💻</a> <a href="#maintenance-YemreAybey" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/velascojuan/"><img src="https://avatars.githubusercontent.com/u/4591845?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Juan</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=OverStruck" title="Code">💻</a> <a href="#maintenance-OverStruck" title="Maintenance">🚧</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.facebook.com/sreang.rathanak"><img src="https://avatars.githubusercontent.com/u/12246079?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sreang Rathanak</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=RathanakSreang" title="Code">💻</a> <a href="#maintenance-RathanakSreang" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 

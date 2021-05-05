@@ -78,6 +78,16 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "RathanakSreang",
+      "name": "Sreang Rathanak",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12246079?v=4",
+      "profile": "https://www.facebook.com/sreang.rathanak",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
