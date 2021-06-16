@@ -88,6 +88,16 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "andresriveratoro",
+      "name": "Andres Rivera",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36863582?v=4",
+      "profile": "https://github.com/andresriveratoro",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
