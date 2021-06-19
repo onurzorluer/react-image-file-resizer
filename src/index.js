@@ -67,7 +67,7 @@ class Resizer {
     height = newHeightWidth.height;
 
     var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#fff";
+    ctx.fillStyle = "rgba(0, 0, 0, 0)";
     ctx.fillRect(0, 0, width, height);
 
     if (rotation) {
