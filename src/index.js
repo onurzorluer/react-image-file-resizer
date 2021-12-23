@@ -3,14 +3,14 @@
  * @author Onur Zorluer
  *
  */
-class Resizer {
+ class Resizer {
   static changeHeightWidth(
     height,
     maxHeight,
     width,
     maxWidth,
     minWidth,
-    minHeight
+    minHeight,
   ) {
     if (width > maxWidth) {
       height = Math.round((height * maxWidth) / width);
@@ -37,23 +37,23 @@ class Resizer {
     maxHeight,
     minWidth,
     minHeight,
-    compressFormat = "jpeg",
+    compressFormat = 'jpeg',
     quality = 100,
-    rotation = 0
+    rotation = 0,
   ) {
-    var qualityDecimal = quality / 100;
-    var canvas = document.createElement("canvas");
+    const qualityDecimal = quality / 100;
+    const canvas = document.createElement('canvas');
 
-    var width = image.width;
-    var height = image.height;
+    let width = image.width;
+    let height = image.height;
 
-    var newHeightWidth = this.changeHeightWidth(
+    const newHeightWidth = this.changeHeightWidth(
       height,
-      maxHeight,
+      maxHeight || height,
       width,
-      maxWidth,
+      maxWidth || width,
       minWidth,
-      minHeight
+      minHeight,
     );
     if (rotation && (rotation === 90 || rotation === 270)) {
       canvas.width = newHeightWidth.height;
@@ -66,8 +66,8 @@ class Resizer {
     width = newHeightWidth.width;
     height = newHeightWidth.height;
 
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "rgba(0, 0, 0, 0)";
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'rgba(0, 0, 0, 0)';
     ctx.fillRect(0, 0, width, height);
 
     if (rotation) {
@@ -88,23 +88,23 @@ class Resizer {
   }
 
   static b64toByteArrays(b64Data, contentType) {
-    contentType = contentType || "image/jpeg";
-    var sliceSize = 512;
+    contentType = contentType || 'image/jpeg';
+    const sliceSize = 512;
 
-    var byteCharacters = atob(
-      b64Data.toString().replace(/^data:image\/(png|jpeg|jpg|webp);base64,/, "")
+    const byteCharacters = atob(
+      b64Data.toString().replace(/^data:image\/(png|jpeg|jpg|webp);base64,/, ''),
     );
-    var byteArrays = [];
+    const byteArrays = [];
 
-    for (var offset = 0; offset < byteCharacters.length; offset += sliceSize) {
-      var slice = byteCharacters.slice(offset, offset + sliceSize);
+    for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+      const slice = byteCharacters.slice(offset, offset + sliceSize);
 
-      var byteNumbers = new Array(slice.length);
-      for (var i = 0; i < slice.length; i++) {
+      const byteNumbers = new Array(slice.length);
+      for (let i = 0; i < slice.length; i++) {
         byteNumbers[i] = slice.charCodeAt(i);
       }
 
-      var byteArray = new Uint8Array(byteNumbers);
+      const byteArray = new Uint8Array(byteNumbers);
 
       byteArrays.push(byteArray);
     }
@@ -113,7 +113,7 @@ class Resizer {
 
   static b64toBlob(b64Data, contentType) {
     const byteArrays = this.b64toByteArrays(b64Data, contentType);
-    var blob = new Blob(byteArrays, { type: contentType, lastModified: new Date() });
+    const blob = new Blob(byteArrays, { type: contentType, lastModified: new Date() });
     return blob;
   }
 
@@ -125,27 +125,27 @@ class Resizer {
 
   static createResizedImage(
     file,
-    maxWidth,
-    maxHeight,
     compressFormat,
     quality,
     rotation,
     responseUriFunc,
-    outputType = "base64",
+    outputType = 'base64',
+    maxWidth = null,
+    maxHeight = null,
     minWidth = null,
     minHeight = null,
   ) {
     const reader = new FileReader();
     if (file) {
-      if (file.type && !file.type.includes("image")) {
-        throw Error("File Is NOT Image!");
+      if (file.type && !file.type.includes('image')) {
+        throw Error('File Is NOT Image!');
       } else {
         reader.readAsDataURL(file);
         reader.onload = () => {
-          var image = new Image();
+          const image = new Image();
           image.src = reader.result;
           image.onload = function () {
-            var resizedDataUrl = Resizer.resizeAndRotateImage(
+            const resizedDataUrl = Resizer.resizeAndRotateImage(
               image,
               maxWidth,
               maxHeight,
@@ -153,24 +153,24 @@ class Resizer {
               minHeight,
               compressFormat,
               quality,
-              rotation
+              rotation,
             );
             const contentType = `image/${compressFormat}`;
             switch (outputType) {
-              case "blob":
+              case 'blob':
                 const blob = Resizer.b64toBlob(resizedDataUrl, contentType);
                 responseUriFunc(blob);
-              break;
-              case "base64":
+                break;
+              case 'base64':
                 responseUriFunc(resizedDataUrl);
-              break;
-              case "file":
-                let fileName = file.name;
-                let fileNameWithoutFormat = fileName.toString().replace(/(png|jpeg|jpg|webp)$/i, "");
-                let newFileName = fileNameWithoutFormat.concat(compressFormat.toString());
+                break;
+              case 'file':
+                const fileName = file.name;
+                const fileNameWithoutFormat = fileName.toString().replace(/(png|jpeg|jpg|webp)$/i, '');
+                const newFileName = fileNameWithoutFormat.concat(compressFormat.toString());
                 const newFile = Resizer.b64toFile(resizedDataUrl, newFileName, contentType);
                 responseUriFunc(newFile);
-              break;
+                break;
               default:
                 responseUriFunc(resizedDataUrl);
             }
@@ -181,32 +181,32 @@ class Resizer {
         };
       }
     } else {
-      throw Error("File Not Found!");
+      throw Error('File Not Found!');
     }
   }
 }
 export default {
   imageFileResizer: (
     file,
-    maxWidth,
-    maxHeight,
     compressFormat,
     quality,
     rotation,
     responseUriFunc,
     outputType,
+    maxWidth,
+    maxHeight,
     minWidth,
     minHeight,
   ) => {
     return Resizer.createResizedImage(
       file,
-      maxWidth,
-      maxHeight,
       compressFormat,
       quality,
       rotation,
       responseUriFunc,
       outputType,
+      maxWidth,
+      maxHeight,
       minWidth,
       minHeight,
     );
