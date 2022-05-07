@@ -1,7 +1,7 @@
 # React Image File Resizer
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Build Status](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master) [![npm version](https://badge.fury.io/js/react-image-file-resizer.svg)](https://badge.fury.io/js/react-image-file-resizer)
@@ -175,6 +175,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
   <tr>
     <td align="center"><a href="https://www.facebook.com/sreang.rathanak"><img src="https://avatars.githubusercontent.com/u/12246079?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sreang Rathanak</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=RathanakSreang" title="Code">💻</a> <a href="#maintenance-RathanakSreang" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/andresriveratoro"><img src="https://avatars.githubusercontent.com/u/36863582?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andres Rivera</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=andresriveratoro" title="Code">💻</a> <a href="#maintenance-andresriveratoro" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/mmmulani"><img src="https://avatars.githubusercontent.com/u/192928?v=4?s=100" width="100px;" alt=""/><br /><sub><b>mmmulani</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=mmmulani" title="Code">💻</a> <a href="#maintenance-mmmulani" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 
