@@ -1,6 +1,6 @@
 {
   "name": "react-image-file-resizer",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "description": "React module that can rescaled local images. You can change image's width, height, format, rotation and quality. It returns resized image's new base64 URI or Blob. The URI can be used as the source of an <Image> component.",
   "main": "build/index.js",
   "types": "./index.d.ts",
