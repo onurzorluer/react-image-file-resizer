@@ -70,6 +70,10 @@ class Resizer {
     ctx.fillStyle = "rgba(0, 0, 0, 0)";
     ctx.fillRect(0, 0, width, height);
 
+    if (ctx.imageSmoothingEnabled && ctx.imageSmoothingQuality) {
+      ctx.imageSmoothingQuality = 'high';
+    }
+
     if (rotation) {
       ctx.rotate((rotation * Math.PI) / 180);
       if (rotation === 90) {
