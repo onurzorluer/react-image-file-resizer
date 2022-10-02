@@ -27,13 +27,13 @@ declare module "react-image-file-resizer" {
       file: Blob,
       maxWidth: number,
       maxHeight: number,
-      compressFormat: string,
+      compressFormat: "JPG" | "PNG" | "WEBP",
       quality: number,
       rotation: number,
       responseUriFunc: (
         value: string | Blob | File | ProgressEvent<FileReader>
       ) => void,
-      outputType?: string,
+      outputType?: "base64" | "blob" | "file",
       minWidth?: number,
       minHeight?: number
     ): void;
