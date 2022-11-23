@@ -6,3 +6,6 @@
 
 # npm packs
 react-image-file-resizer-0.4.8.tgz
+
+.DS_Store
+
