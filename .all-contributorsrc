@@ -108,6 +108,15 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "Alex-1701",
+      "name": "Alex-1701",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55504833?v=4",
+      "profile": "https://github.com/Alex-1701",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
