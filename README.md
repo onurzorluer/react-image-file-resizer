@@ -1,7 +1,7 @@
 # React Image File Resizer
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Build Status](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master)](https://travis-ci.org/onurzorluer/react-image-file-resizer.svg?branch=master) [![npm version](https://badge.fury.io/js/react-image-file-resizer.svg)](https://badge.fury.io/js/react-image-file-resizer)
@@ -163,20 +163,23 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/AhmadMaleki"><img src="https://avatars2.githubusercontent.com/u/26637638?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ahmad Maleki</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=AhmadMaleki" title="Code">💻</a> <a href="#maintenance-AhmadMaleki" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="http://www.vysnovsky.sk/"><img src="https://avatars1.githubusercontent.com/u/5657185?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Martin Vyšňovský</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=martinvysnovsky" title="Code">💻</a> <a href="#maintenance-martinvysnovsky" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/nadunc"><img src="https://avatars2.githubusercontent.com/u/22863180?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nadun Chamikara</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=nadunc" title="Code">💻</a> <a href="#maintenance-nadunc" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://shubhamzanwar.github.io/"><img src="https://avatars0.githubusercontent.com/u/15626155?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shubham Zanwar</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=shubhamzanwar" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/onderonur/"><img src="https://avatars0.githubusercontent.com/u/50423574?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Onur Önder</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=onderonur" title="Code">💻</a> <a href="#maintenance-onderonur" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://emreaybey.com/"><img src="https://avatars1.githubusercontent.com/u/45988990?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yunus Emre</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=YemreAybey" title="Code">💻</a> <a href="#maintenance-YemreAybey" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/velascojuan/"><img src="https://avatars.githubusercontent.com/u/4591845?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Juan</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=OverStruck" title="Code">💻</a> <a href="#maintenance-OverStruck" title="Maintenance">🚧</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://www.facebook.com/sreang.rathanak"><img src="https://avatars.githubusercontent.com/u/12246079?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sreang Rathanak</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=RathanakSreang" title="Code">💻</a> <a href="#maintenance-RathanakSreang" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/andresriveratoro"><img src="https://avatars.githubusercontent.com/u/36863582?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andres Rivera</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=andresriveratoro" title="Code">💻</a> <a href="#maintenance-andresriveratoro" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/mmmulani"><img src="https://avatars.githubusercontent.com/u/192928?v=4?s=100" width="100px;" alt=""/><br /><sub><b>mmmulani</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=mmmulani" title="Code">💻</a> <a href="#maintenance-mmmulani" title="Maintenance">🚧</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/AhmadMaleki"><img src="https://avatars2.githubusercontent.com/u/26637638?v=4?s=100" width="100px;" alt="Ahmad Maleki"/><br /><sub><b>Ahmad Maleki</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=AhmadMaleki" title="Code">💻</a> <a href="#maintenance-AhmadMaleki" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="http://www.vysnovsky.sk/"><img src="https://avatars1.githubusercontent.com/u/5657185?v=4?s=100" width="100px;" alt="Martin Vyšňovský"/><br /><sub><b>Martin Vyšňovský</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=martinvysnovsky" title="Code">💻</a> <a href="#maintenance-martinvysnovsky" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://github.com/nadunc"><img src="https://avatars2.githubusercontent.com/u/22863180?v=4?s=100" width="100px;" alt="Nadun Chamikara"/><br /><sub><b>Nadun Chamikara</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=nadunc" title="Code">💻</a> <a href="#maintenance-nadunc" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://shubhamzanwar.github.io/"><img src="https://avatars0.githubusercontent.com/u/15626155?v=4?s=100" width="100px;" alt="Shubham Zanwar"/><br /><sub><b>Shubham Zanwar</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=shubhamzanwar" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/onderonur/"><img src="https://avatars0.githubusercontent.com/u/50423574?v=4?s=100" width="100px;" alt="Onur Önder"/><br /><sub><b>Onur Önder</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=onderonur" title="Code">💻</a> <a href="#maintenance-onderonur" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://emreaybey.com/"><img src="https://avatars1.githubusercontent.com/u/45988990?v=4?s=100" width="100px;" alt="Yunus Emre"/><br /><sub><b>Yunus Emre</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=YemreAybey" title="Code">💻</a> <a href="#maintenance-YemreAybey" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/velascojuan/"><img src="https://avatars.githubusercontent.com/u/4591845?v=4?s=100" width="100px;" alt="Juan"/><br /><sub><b>Juan</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=OverStruck" title="Code">💻</a> <a href="#maintenance-OverStruck" title="Maintenance">🚧</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://www.facebook.com/sreang.rathanak"><img src="https://avatars.githubusercontent.com/u/12246079?v=4?s=100" width="100px;" alt="Sreang Rathanak"/><br /><sub><b>Sreang Rathanak</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=RathanakSreang" title="Code">💻</a> <a href="#maintenance-RathanakSreang" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://github.com/andresriveratoro"><img src="https://avatars.githubusercontent.com/u/36863582?v=4?s=100" width="100px;" alt="Andres Rivera"/><br /><sub><b>Andres Rivera</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=andresriveratoro" title="Code">💻</a> <a href="#maintenance-andresriveratoro" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://github.com/mmmulani"><img src="https://avatars.githubusercontent.com/u/192928?v=4?s=100" width="100px;" alt="mmmulani"/><br /><sub><b>mmmulani</b></sub></a><br /><a href="https://github.com/onurzorluer/react-image-file-resizer/commits?author=mmmulani" title="Code">💻</a> <a href="#maintenance-mmmulani" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://github.com/Alex-1701"><img src="https://avatars.githubusercontent.com/u/55504833?v=4?s=100" width="100px;" alt="Alex-1701"/><br /><sub><b>Alex-1701</b></sub></a><br /><a href="#maintenance-Alex-1701" title="Maintenance">🚧</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
