@@ -159,7 +159,7 @@ class Resizer {
               quality,
               rotation
             );
-            const contentType = `image/${compressFormat}`;
+            const contentType = file.type;
             switch (outputType) {
               case "blob":
                 const blob = Resizer.b64toBlob(resizedDataUrl, contentType);
